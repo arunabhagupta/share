@@ -1,0 +1,290 @@
+# Survey: Claude Code — Seat Demand and Success Criteria
+
+*Anonymous · ~6 minutes for hands-on technical roles, ~3 minutes for everyone else*
+
+**Purpose of this survey (state this on the form's intro page):** Claude Code will replace GitHub Copilot. It is a terminal and IDE tool that works against a code repository. Gemini and Palantir AIP are not changing and are not under review — the only decision this survey informs is how many Claude Code licences to budget for, and who should get them. Answer honestly about your real working patterns; saying you wouldn't use it costs you nothing and helps us size this correctly.
+
+---
+
+## Section 0 — Screener (everyone)
+
+**Q1. What is your role?**
+*Single choice*
+- Software developer — backend
+- Software developer — frontend or full-stack
+- ML engineer
+- Data / analytics engineer
+- Foundry developer (Code Repositories, Workshop, Slate, Pipeline Builder)
+- DevOps / SRE / Platform engineer
+- QA / Test engineer
+- Architect
+- Engineering / delivery manager
+- Scrum master
+- Product owner / business analyst
+- Functional or domain specialist
+- Other
+
+**Q2. How would you describe your role?**
+*Single choice*
+- Technical — I write or review code as a core part of my job
+- Techno-functional — I bridge business and technical work, and write code or queries sometimes
+- Functional — I don't write code
+
+**Q3. How often do you personally write or edit code, scripts, queries or configuration?**
+*Single choice — this routes the rest of the survey*
+- Daily
+- A few times a week
+- A few times a month
+- Rarely — a few times a year
+- Never
+
+> **Routing:** Q3 = Daily, weekly or monthly → **Section A**. Q3 = Rarely or Never → **Section B**. Both then go to **Section C**.
+
+---
+
+## Section A — Hands-on roles
+
+**Q4. What do you build with? Pick everything you use in a normal month.**
+*Multi-select*
+- Python
+- Java / Kotlin / JVM
+- JavaScript / TypeScript
+- C / C++ / Rust
+- C# / .NET
+- SQL and data transforms
+- Shell scripting
+- Infrastructure-as-code (Terraform, Ansible, Helm)
+- CI/CD pipelines and build config
+- Foundry Code Repositories or Code Workspaces
+- Foundry Pipeline Builder, Workshop or Slate (low-code)
+- Notebooks (Jupyter or equivalent)
+- Other
+
+**Q5. Where does that work actually happen?**
+*Single choice*
+- Almost entirely in a local IDE or terminal — 80–100%
+- Mostly local — 60–79%
+- Roughly an even split between local and browser-based tools — 40–59%
+- Mostly in the browser (Foundry, notebooks, web consoles) — 20–39%
+- Almost entirely in the browser — 0–19%
+
+**Q6. Is the code you work on in a repository you can clone and run on your own machine?**
+*Single choice*
+- Yes, all or most of it
+- Some of it
+- Technically possible, but I never do it
+- No — it only exists inside Foundry or another platform
+- I don't know
+
+**Q7. When you hit a coding problem today, which tool do you reach for first?**
+*Single choice*
+- GitHub Copilot — inline completions
+- GitHub Copilot Chat
+- Palantir AIP
+- Gemini (web)
+- Gemini in Workspace
+- I don't use an AI tool for this
+
+**Q8. What share of your coding problems does that tool solve well enough that you don't go looking elsewhere?**
+*Single choice*
+- Almost all — 90%+
+- Most — 70–89%
+- About half — 40–69%
+- A minority — 10–39%
+- Almost none — under 10%
+
+**Q9. When it isn't enough, what's usually the reason?**
+*Multi-select, up to 3*
+- It only sees what I paste, not the whole codebase
+- It can't change several files as one coherent piece of work
+- It can't run the code, tests or build to check its own output
+- It loses the thread on anything longer than a few steps
+- Too much copy-pasting between the browser and where I work
+- Wrong for our stack, libraries or conventions
+- It can't reach my work inside Foundry at all
+- It's usually enough — I rarely hit a wall
+
+**Q10. In a typical week, how many tasks do you take on that span several files and take more than an hour?**
+*Single choice*
+- None
+- 1–2
+- 3–5
+- 6–10
+- More than 10
+
+**Q11. Which of these do you believe Claude Code can do?**
+*Multi-select*
+- Read and reason across a whole repository, not just an open file
+- Create, edit and delete multiple files as one task
+- Run terminal commands, tests and builds, and act on the results
+- Make a git commit and open a pull request
+- Work through a long multi-step task without step-by-step instructions
+- I'm not sure
+
+**Q12. Think about a normal week six months from now, once Claude Code is available. Of all the AI-assisted work you'd do, roughly how much would each tool handle?**
+*Multiple-choice grid. Rows: Claude Code · Palantir AIP · Gemini (web) · Gemini in Workspace. Columns: None · Up to 25% · 26–50% · 51–75% · Most of it (76–100%)*
+
+**Q13. Realistically, how many days a week would you open Claude Code?**
+*Single choice*
+- Every working day
+- 3–4 days
+- 1–2 days
+- A few times a month
+- Rarely or never
+
+**Q14. If a Claude Code licence cost roughly what your GitHub Copilot licence costs today, would you want one?**
+*Single choice*
+- Yes — and I'd expect to use it more than I use Copilot
+- Yes — as a straight replacement, similar usage
+- Yes, but only if I keep Gemini or AIP alongside it
+- Only if it's free to my team's budget
+- No — Copilot already covers what I need
+- No — my work doesn't happen in an IDE
+
+**Q15. Giving up GitHub Copilot means losing something. What must Claude Code do at least as well for that trade to be acceptable?**
+*Multi-select, up to 3*
+- Inline suggestions as I type
+- Speed on small, quick suggestions
+- IDE integration that doesn't disrupt how I work
+- Matching our code style and conventions
+- Covering all the languages I use
+- Enterprise controls — data handling, audit, access
+- Working on restricted networks
+- Nothing — I barely use Copilot's completions
+
+**Q16. Suppose there aren't enough licences for everyone at first. Should you be in the first group, and why?**
+*Single choice + required short answer*
+- Yes — I'd use it heavily from day one
+- Yes, but I could wait a cycle
+- No — someone else would get more from it
+- No — my work doesn't call for it
+
+*Short answer: in one or two lines, why?*
+
+---
+
+## Section B — Roles that don't write code
+
+> Shown when Q3 is "Rarely" or "Never". Five questions, then straight to Section C.
+
+**Q17. Which AI tools do you use in a normal work week?**
+*Multi-select*
+- Gemini in Workspace (Docs, Sheets, Gmail)
+- Gemini (web)
+- Palantir AIP
+- GitHub Copilot
+- None
+
+**Q18. Do you ever need any of these produced or changed, and currently ask someone else?**
+*Multi-select*
+- SQL queries or data extracts
+- Reports, dashboards or Workshop apps
+- Spreadsheet automation or scripts
+- Configuration changes
+- Small fixes to an existing tool or page
+- None of these
+
+**Q19. Would having a coding agent on the team change how your work gets done?**
+*Single choice*
+- Yes — I'd expect faster turnaround on things I request
+- Maybe — hard to say until I see it
+- No real change for me
+- I don't know enough to say
+
+**Q20. Would you want a Claude Code licence for yourself?**
+*Single choice — note that Claude Code runs in a terminal or IDE against a code repository*
+- Yes — I do enough hands-on technical work to use it
+- Curious, but I'd probably not use it much
+- No — it isn't relevant to my role
+- I'd rather have general AI help in the browser than a coding tool
+
+**Q21. As someone who'll see the results rather than use the tool, what would tell you this investment paid off?**
+*Long answer*
+
+---
+
+## Section C — Success criteria (everyone)
+
+**Q22. When we judge whether Claude Code was worth it, what should we compare against?**
+*Single choice*
+- GitHub Copilot — did it beat the tool it replaced
+- Palantir AIP — did it beat what I use inside Foundry
+- Gemini — did it beat what I'd otherwise paste into a browser
+- How we worked before any AI assistance
+- Absolute output — did the team ship more, regardless of comparison
+- I don't think a fair comparison is possible
+
+**Q23. How would you actually show that value? Describe how you'd prove it to someone sceptical.**
+*Long answer, required*
+
+> Keep this genuinely open. Don't offer options — the point is to find out what people reach for unprompted, and a list would tell them what to say.
+
+**Q24. Which measures would you trust most? Pick and rank your top 3.**
+*Ranking, choose 3*
+- Hours saved per person per week
+- Cycle time — task picked up to pull request merged
+- Throughput — tasks or stories completed per sprint
+- Fewer bugs and less rework reaching production
+- Pull request review turnaround
+- Time to get productive on unfamiliar code or pipelines
+- Less time on toil (boilerplate, tests, documentation)
+- Total AI tool spend per person compared with today
+- Team satisfaction and reduced frustration
+- Capacity to take on work we'd otherwise drop
+
+**Q25. Ninety days after rollout, what would tell you it *isn't* working?**
+*Multi-select, up to 3*
+- Fewer than half the licences used in a normal week
+- No measurable time saving
+- More time reviewing and fixing its output than it saved
+- Quality or defect rates getting worse
+- A security, compliance or data-handling problem
+- People quietly going back to Gemini or AIP
+- Nothing at 90 days — I'd give it longer
+
+**Q26. How excited are you about Claude Code arriving?**
+*Linear scale, 0 to 10*
+
+**Q27. Anything else we should know before the budget decision?**
+*Long answer, optional*
+
+---
+
+# Turning this into a budget number
+
+## Step 1 — Sort every respondent into a funding bucket
+
+| Bucket | Rule | Budget action |
+|---|---|---|
+| **Fund now** | Q5 is 60%+ local **and** Q10 is 3–5 or more **and** Q13 is 3+ days **and** Q14 is any "Yes" | Buy the seat in wave one. |
+| **Fund after training** | Q5 and Q10 as above, but Q11 has fewer than 3 ticks **or** Q13 is 1–2 days | The work fits, the understanding doesn't. Run a demo, re-ask Q13, then fund. |
+| **Hold for review** | Q5 is under 40% local **or** Q6 is "No"/"never" | Blocked by where their code lives. Revisit only if Q6 changes. |
+| **Don't fund** | Q3 is Rarely/Never, **or** Q14 is either "No", **or** Q13 is "Rarely or never" | No seat. Not a judgement on the person — the tool doesn't reach their work. |
+
+**Your seat number is Fund now, plus a decision on Fund after training.** I'd budget Fund now at full confidence and Fund after training at roughly half, then true it up at the first review.
+
+## Step 2 — Read the distribution grid (Q12) as the sanity check
+
+Q12 is the question that will most influence the budget, and the one most likely to flatter you. Two specific reads:
+
+**Claude Code at 51%+ with AIP also at 51%+** is not a distribution, it's optimism — the percentages don't fit in a week. Treat those respondents as unreliable on Q12 and fall back on Q13 for them, since a count of days is much harder to inflate than a share of effort.
+
+**Claude Code at "None" or "Up to 25%" among people who also answered "Yes" to Q14** is your dormant-licence risk. They want the tool without expecting to use it much, which is a normal and human thing to want. Q13 settles it.
+
+The AIP column matters for a reason beyond sizing: if Foundry people put most of their work on AIP, the honest framing to leadership is that Claude Code is additive capability for a subset of the team, not a consolidation. Say that yourself before someone else notices it.
+
+## Step 3 — What Q22 and Q23 are really for
+
+Q22 gives you a distribution of comparison baselines, which is the closest thing you'll get to a measure of inclination. The split matters more than the winner. If people mostly pick "beat GitHub Copilot," you're being judged on a like-for-like swap and the bar is a familiar one. If a large group picks "how we worked before any AI," expect inflated expectations — that comparison makes any modern tool look transformative and tells you the team hasn't internalised how much Copilot already does. And anyone picking "no fair comparison is possible" is signalling that they'll judge by feel, which is worth knowing in advance.
+
+Q23 is deliberately unscaffolded. What people reach for without prompting — telemetry, timed tasks, a demo, gut feel — tells you what evidence will actually land in your organisation. Code the answers into three or four themes afterwards and report the counts.
+
+## Step 4 — Report in this order
+
+1. **Seat count** — Fund now, plus half of Fund after training, as a headcount with the rule stated
+2. **Distribution** — the Q12 grid, with the Claude Code column called out
+3. **Dormancy risk** — % of Fund now answering 1–2 days or less on Q13
+4. **Success charter** — top 3 from Q24, top 2 from Q25, and the Q22 split, agreed before rollout
+5. **Excitement** — Q26 mean, last, labelled as sentiment rather than demand
+
+With under ~25 responses in any bucket, report counts rather than percentages. And capture whatever baseline Q23 points to *before* the first licence is issued — a before-number can't be reconstructed after the fact.
